@@ -1,0 +1,25 @@
+
+# Text files
+*.sch       text=auto
+fp-lib-table    text=auto
+*.dcm       text=auto
+*.lib       text=auto
+*.pcb       text=auto
+*.pro       text=auto
+*.txt       text=auto
+*.kicad_mod text=auto
+
+# Binary files (no line-ending conversions)
+*.bz2       binary diff=hex
+*.gz        binary diff=hex
+*.pdf       binary diff=hex
+*.png       binary diff=hex
+*.zip       binary diff=hex
+*.pack      binary diff=hex
+*.step      binary diff=hex
+*.stp       binary diff=hex
+*.STEP      binary diff=hex
+*.STP       binary diff=hex
+*.wings     binary diff=hex
+*.svg       binary diff=hex
+*.pyc       binary diff=hex

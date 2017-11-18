@@ -1,0 +1,269 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:microchip_pic16mcu
+LIBS:TempControl_v4-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L INA326 U?
+U 1 1 5A10C952
+P 4550 3550
+F 0 "U?" H 4700 3675 50  0000 L CNN
+F 1 "INA326" H 4700 3425 50  0000 L CNN
+F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 4550 3550 50  0001 L CNN
+F 3 "" H 4650 3550 50  0001 C CNN
+	1    4550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5A10C9B5
+P 4550 3100
+F 0 "#PWR?" H 4550 2950 50  0001 C CNN
+F 1 "+5V" H 4550 3240 50  0000 C CNN
+F 2 "" H 4550 3100 50  0001 C CNN
+F 3 "" H 4550 3100 50  0001 C CNN
+	1    4550 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3100 4550 3250
+$Comp
+L GND #PWR?
+U 1 1 5A10C9CE
+P 4550 4450
+F 0 "#PWR?" H 4550 4200 50  0001 C CNN
+F 1 "GND" H 4550 4300 50  0000 C CNN
+F 2 "" H 4550 4450 50  0001 C CNN
+F 3 "" H 4550 4450 50  0001 C CNN
+	1    4550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3850 4550 4450
+$Comp
+L R R?
+U 1 1 5A10C9E8
+P 4650 4100
+F 0 "R?" V 4730 4100 50  0000 C CNN
+F 1 "200k" V 4650 4100 50  0000 C CNN
+F 2 "" V 4580 4100 50  0001 C CNN
+F 3 "" H 4650 4100 50  0001 C CNN
+	1    4650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A10CA17
+P 4900 4100
+F 0 "C?" H 4925 4200 50  0000 L CNN
+F 1 "500pF" H 4925 4000 50  0000 L CNN
+F 2 "" H 4938 3950 50  0001 C CNN
+F 3 "" H 4900 4100 50  0001 C CNN
+	1    4900 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3850 4650 3950
+Wire Wire Line
+	4650 3900 4900 3900
+Wire Wire Line
+	4900 3900 4900 3950
+Connection ~ 4650 3900
+Wire Wire Line
+	4550 4350 4900 4350
+Wire Wire Line
+	4900 4350 4900 4250
+Connection ~ 4550 4350
+Wire Wire Line
+	4650 4250 4650 4350
+Connection ~ 4650 4350
+$Comp
+L R R?
+U 1 1 5A10CAAE
+P 5250 3550
+F 0 "R?" V 5330 3550 50  0000 C CNN
+F 1 "100" V 5250 3550 50  0000 C CNN
+F 2 "" V 5180 3550 50  0001 C CNN
+F 3 "" H 5250 3550 50  0001 C CNN
+	1    5250 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3550 5100 3550
+Text HLabel 5600 3550 2    60   Output ~ 0
+amp_out
+Wire Wire Line
+	5400 3550 5600 3550
+$Comp
+L R R?
+U 1 1 5A10CB4C
+P 3900 3550
+F 0 "R?" V 3980 3550 50  0000 C CNN
+F 1 "20k" V 3900 3550 50  0000 C CNN
+F 2 "" V 3830 3550 50  0001 C CNN
+F 3 "" H 3900 3550 50  0001 C CNN
+	1    3900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3650 4250 3650
+Wire Wire Line
+	4250 3450 4050 3450
+Wire Wire Line
+	4050 3450 4050 3400
+Wire Wire Line
+	4050 3400 3900 3400
+Wire Wire Line
+	3900 3700 4050 3700
+Wire Wire Line
+	4050 3700 4050 3650
+$Comp
+L C C?
+U 1 1 5A10CD2E
+P 3550 3550
+F 0 "C?" H 3575 3650 50  0000 L CNN
+F 1 "470nF" H 3575 3450 50  0000 L CNN
+F 2 "" H 3588 3400 50  0001 C CNN
+F 3 "" H 3550 3550 50  0001 C CNN
+	1    3550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3400 3550 3350
+Wire Wire Line
+	3400 3350 4250 3350
+Wire Wire Line
+	3400 3750 4250 3750
+Wire Wire Line
+	3550 3750 3550 3700
+$Comp
+L R R?
+U 1 1 5A10CDAA
+P 3250 3750
+F 0 "R?" V 3330 3750 50  0000 C CNN
+F 1 "2.2k" V 3250 3750 50  0000 C CNN
+F 2 "" V 3180 3750 50  0001 C CNN
+F 3 "" H 3250 3750 50  0001 C CNN
+	1    3250 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A10CE27
+P 3250 3350
+F 0 "R?" V 3330 3350 50  0000 C CNN
+F 1 "2.2k" V 3250 3350 50  0000 C CNN
+F 2 "" V 3180 3350 50  0001 C CNN
+F 3 "" H 3250 3350 50  0001 C CNN
+	1    3250 3350
+	0    1    1    0   
+$EndComp
+Connection ~ 3550 3750
+Connection ~ 3550 3350
+Text HLabel 2700 3350 0    60   Output ~ 0
+PT100_pos
+Text HLabel 2700 3750 0    60   Output ~ 0
+PT100_min
+Wire Wire Line
+	3100 3750 2700 3750
+Wire Wire Line
+	2700 3350 3100 3350
+$Comp
+L R R?
+U 1 1 5A10CF48
+P 2950 3100
+F 0 "R?" V 3030 3100 50  0000 C CNN
+F 1 "2.2k" V 2950 3100 50  0000 C CNN
+F 2 "" V 2880 3100 50  0001 C CNN
+F 3 "" H 2950 3100 50  0001 C CNN
+	1    2950 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 3250 2950 3350
+Connection ~ 2950 3350
+$Comp
+L +5V #PWR?
+U 1 1 5A10CFC5
+P 2950 2850
+F 0 "#PWR?" H 2950 2700 50  0001 C CNN
+F 1 "+5V" H 2950 2990 50  0000 C CNN
+F 2 "" H 2950 2850 50  0001 C CNN
+F 3 "" H 2950 2850 50  0001 C CNN
+	1    2950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2850 2950 2950
+$Comp
+L R R?
+U 1 1 5A10D013
+P 2950 4000
+F 0 "R?" V 3030 4000 50  0000 C CNN
+F 1 "2.2k" V 2950 4000 50  0000 C CNN
+F 2 "" V 2880 4000 50  0001 C CNN
+F 3 "" H 2950 4000 50  0001 C CNN
+	1    2950 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 3850 2950 3750
+Connection ~ 2950 3750
+$Comp
+L GND #PWR?
+U 1 1 5A10D092
+P 2950 4200
+F 0 "#PWR?" H 2950 3950 50  0001 C CNN
+F 1 "GND" H 2950 4050 50  0000 C CNN
+F 2 "" H 2950 4200 50  0001 C CNN
+F 3 "" H 2950 4200 50  0001 C CNN
+	1    2950 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4200 2950 4150
+$EndSCHEMATC
