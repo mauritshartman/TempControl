@@ -324,7 +324,7 @@ U 1 1 5A10D79A
 P 2450 5750
 F 0 "RV1" V 2275 5750 50  0000 C CNN
 F 1 "POT" V 2350 5750 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm" H 2450 5750 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Piher_PT-10v5_Horizontal_Px5.0mm_Py5.0mm" H 2450 5750 50  0001 C CNN
 F 3 "" H 2450 5750 50  0001 C CNN
 	1    2450 5750
 	-1   0    0    -1  
