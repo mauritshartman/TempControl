@@ -1,4 +1,4 @@
-update=18-Nov-17 11:23:36 PM
+update=19-Nov-17 12:46:22 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=microchip_pic16mcu
+LibName34=g3mb-202p
