@@ -8,6 +8,8 @@
 *~
 _autosave-*
 *.tmp
+fp-lib-table
+*cache.lib
 
 # Netlist files (exported from Eeschema)
 *.net
