@@ -194,21 +194,10 @@ Wire Wire Line
 	3200 4750 3200 3650
 Wire Wire Line
 	3200 3650 3050 3650
-$Sheet
-S 8350 2600 1100 350 
-U 5A10C0D7
-F0 "PT100_amp" 60
-F1 "PT100_amp.sch" 60
-F2 "amp_out" O L 8350 2700 60 
-F3 "PT100_pos" O R 9450 2700 60 
-F4 "PT100_min" O R 9450 2800 60 
-$EndSheet
 Wire Wire Line
-	6800 3250 7850 3250
+	7850 3250 6800 3250
 Wire Wire Line
-	7850 3250 7850 2700
-Wire Wire Line
-	7850 2700 8350 2700
+	7850 2600 7850 3250
 $Comp
 L Screw_Terminal_01x02 J5
 U 1 1 5A10C870
@@ -220,38 +209,17 @@ F 3 "" H 10000 2700 50  0001 C CNN
 	1    10000 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9450 2700 9800 2700
-Wire Wire Line
-	9450 2800 9800 2800
-$Sheet
-S 8350 3200 1100 350 
-U 5A10C115
-F0 "PT100_amp2" 60
-F1 "PT100_amp.sch" 60
-F2 "amp_out" O L 8350 3300 60 
-F3 "PT100_pos" O R 9450 3300 60 
-F4 "PT100_min" O R 9450 3400 60 
-$EndSheet
 $Comp
 L Screw_Terminal_01x02 J6
 U 1 1 5A10C21A
-P 10000 3300
-F 0 "J6" H 10000 3400 50  0000 C CNN
-F 1 "Temp1" H 10000 3100 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 10000 3300 50  0001 C CNN
-F 3 "" H 10000 3300 50  0001 C CNN
-	1    10000 3300
+P 10000 3400
+F 0 "J6" H 10000 3500 50  0000 C CNN
+F 1 "Temp1" H 10000 3200 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 10000 3400 50  0001 C CNN
+F 3 "" H 10000 3400 50  0001 C CNN
+	1    10000 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9450 3300 9800 3300
-Wire Wire Line
-	9800 3400 9450 3400
-Wire Wire Line
-	8350 3300 7950 3300
-Wire Wire Line
-	7950 3300 7950 3350
 Wire Wire Line
 	7950 3350 6800 3350
 $Comp
@@ -367,4 +335,36 @@ Wire Wire Line
 	8250 3650 8250 3950
 Wire Wire Line
 	8250 3950 8350 3950
+$Sheet
+S 8350 2500 1100 350 
+U 5A8B3159
+F0 "Thermistor0" 60
+F1 "Thermistor.sch" 60
+F2 "Thermistor_out" O L 8350 2600 60 
+F3 "Thermistor_1" U R 9450 2700 60 
+F4 "Thermistor_2" U R 9450 2800 60 
+$EndSheet
+Wire Wire Line
+	9800 2800 9450 2800
+Wire Wire Line
+	9450 2700 9800 2700
+Wire Wire Line
+	8350 2600 7850 2600
+$Sheet
+S 8350 3200 1100 350 
+U 5A8B409B
+F0 "Thermistor1" 60
+F1 "Thermistor.sch" 60
+F2 "Thermistor_out" O L 8350 3300 60 
+F3 "Thermistor_1" U R 9450 3400 60 
+F4 "Thermistor_2" U R 9450 3500 60 
+$EndSheet
+Wire Wire Line
+	9800 3400 9450 3400
+Wire Wire Line
+	9450 3500 9800 3500
+Wire Wire Line
+	8350 3300 7950 3300
+Wire Wire Line
+	7950 3300 7950 3350
 $EndSCHEMATC
